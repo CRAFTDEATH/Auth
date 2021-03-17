@@ -1,9 +1,9 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
-export type UserStatusType = "activated" | "disabled"
+import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm'
+export type UserStatusType = 'activated' | 'disabled'
 
-@Entity("users")
+@Entity('users')
 export default class User {
-  @PrimaryGeneratedColumn("increment")
+  @PrimaryGeneratedColumn('increment')
   id: number
 
   @Column()
@@ -19,9 +19,9 @@ export default class User {
   rolesId: number
 
   @Column({
-    type: "enum",
-    enum: ["activated", "disabled"],
-    default: "disabled"
+    type: 'enum',
+    enum: ['activated', 'disabled'],
+    default: 'disabled'
   })
   status: UserStatusType
 }

@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import { Request, Response } from 'express'
 
 export default {
 
@@ -17,4 +17,4 @@ export default {
   async destroy (request: Request, response: Response) {
 
   }
-};
+}
