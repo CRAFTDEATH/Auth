@@ -3,7 +3,7 @@ export type UserStatusType = "activated" | "disabled"
 
 
 @Entity('users')
-export class User {
+export default class User {
   @PrimaryGeneratedColumn('increment')
   id: number
   @Column()
